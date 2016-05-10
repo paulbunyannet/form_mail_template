@@ -1,0 +1,10 @@
+{
+    "name": "paulbunyannet/form_mail_template",
+    "authors": [
+        {
+            "name": "Nate Nolting",
+            "email": "me@natenolting.com"
+        }
+    ],
+    "require": {}
+}
