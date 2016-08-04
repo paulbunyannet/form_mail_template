@@ -4,9 +4,7 @@
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Latest compiled and minified CSS -->
-    @if(array_key_exists('subject', $data))
-        <title>{{ $data['subject'] }}</title>
-    @endif
+    <title>{{ $data['subject'] }}</title>
     @include('pbc_form_mail_template::partials.email-css')
 </head>
 
@@ -25,9 +23,7 @@
                             @if( ! empty($data['branding']))
                                 <h1>{!! $data['branding'] !!}</h1>
                             @endif
-                            @if(array_key_exists('subject', $data))
-                                <h2>{{ $data['subject'] }}</h2>
-                            @endif
+                            <h2>{{ $data['subject'] }}</h2>
                             @if( ! empty($data['body']))
                                 {!! $data['body'] !!}
                             @endif
