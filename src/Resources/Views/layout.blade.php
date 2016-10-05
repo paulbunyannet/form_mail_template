@@ -21,11 +21,17 @@
                     <tr>
                         <td>
                             @if( ! empty($data['branding']))
-                                <h1>{!! $data['branding'] !!}</h1>
+                                <h1 class="branding">{!! $data['branding'] !!}</h1>
                             @endif
-                            <h2>{{ $data['subject'] }}</h2>
+                            <h2 class="subject">{{ $data['subject'] }}</h2>
                             @if( ! empty($data['body']))
-                                {!! $data['body'] !!}
+                                <table class="body">
+                                    <tr>
+                                        <td>
+                                            {!! $data['body'] !!}
+                                        </td>
+                                    </tr>
+                                </table>
                             @endif
                         </td>
                     </tr>
@@ -50,7 +56,13 @@
                     <tr>
                         <td align="center">
                             @if( ! empty($data['footer']))
-                                {{ $data['footer'] }}
+                                <table class="footer">
+                                    <tr>
+                                        <td>
+                                            {{ $data['footer'] }}
+                                        </td>
+                                    </tr>
+                                </table>
                             @endif
                         </td>
                     </tr>
